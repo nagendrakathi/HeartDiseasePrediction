@@ -147,8 +147,12 @@ The Streamlit app provides an intuitive interface for users to input their healt
 - The trained model is integrated into the Streamlit app, providing real-time predictions.
 - Example outputs:
   - **No Heart Disease Detected**: 
+
+
     ![Green Output Example](example_no_disease.png)
   - **Heart Disease Detected**: 
+
+  
     ![Red Output Example](example_disease_detected.png)
 ---
 
