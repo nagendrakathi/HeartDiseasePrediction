@@ -59,14 +59,20 @@ inputs = {
     "Thallium": thallium
 }
 
-# Prediction button
 if st.button("Predict"):
     prediction = predict_heart_disease(inputs)
     
     if prediction[0] == 0:
-        st.write("No heart disease detected.")
+        st.markdown(
+            "<h2 style='color: green; text-align: center;'>No heart disease detected.</h2>", 
+            unsafe_allow_html=True
+        )
     else:
-        st.write("Heart disease detected!")
+        st.markdown(
+            "<h2 style='color: red; text-align: center;'>Heart disease detected!</h2>", 
+            unsafe_allow_html=True
+        )
+
 # Reset button
 if st.button("Reset"):
     # Clear all input fields by setting values to default
