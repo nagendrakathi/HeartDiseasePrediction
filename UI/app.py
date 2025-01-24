@@ -27,21 +27,6 @@ st.write("""
 This is a predictive model for heart disease detection. Please fill in the following details:
 """)
 
-# Initialize session state for input values if not already set
-st.session_state.age = None
-st.session_state.sex = None
-st.session_state.chest_pain_type = None
-st.session_state.bp = None
-st.session_state.cholesterol = None
-st.session_state.fbs = None
-st.session_state.ekg_results = None
-st.session_state.max_hr = None
-st.session_state.exercise_angina = None
-st.session_state.st_depression = None
-st.session_state.slope_of_st = None
-st.session_state.num_vessels_fluro = None
-st.session_state.thallium = None
-
 # Input fields for the user
 age = st.number_input("Age", min_value=0, max_value=120)
 sex = st.selectbox("Sex", ["Male", "Female"])
